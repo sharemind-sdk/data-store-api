@@ -17,12 +17,11 @@ FIND_PACKAGE(SharemindCMakeHelpers 1.6 REQUIRED)
 
 # Data Store API headers:
 FILE(GLOB SharemindDataStoreApi_HEADERS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.h")
-ADD_CUSTOM_TARGET("include_SharemindDataStoreApi_HEADERS_in_IDE"
-                  SOURCES ${SharemindDataStoreApi_HEADERS})
 INSTALL(FILES ${SharemindDataStoreApi_HEADERS}
         DESTINATION "include/sharemind/"
         COMPONENT "dev")
-SharemindAddInterfaceLibrary(DataStoreApi)
+SharemindAddInterfaceLibrary(DataStoreApi
+    EXPOSE_FILES ${SharemindDataStoreApi_HEADERS})
 TARGET_INCLUDE_DIRECTORIES(DataStoreApi
     INTERFACE
         # $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src> # TODO
