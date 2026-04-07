@@ -6,7 +6,7 @@
 # without the written consent of the copyright owner. The usage of this
 # code is subject to the appropriate license agreement.
 #
-CMAKE_MINIMUM_REQUIRED(VERSION "3.0")
+CMAKE_MINIMUM_REQUIRED(VERSION 3.18)
 PROJECT(SharemindDataStoreApi VERSION "0.1.1" LANGUAGES "CXX")
 
 INCLUDE("${CMAKE_CURRENT_SOURCE_DIR}/config.local" OPTIONAL)
