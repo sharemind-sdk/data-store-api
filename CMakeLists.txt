@@ -7,12 +7,12 @@
 # code is subject to the appropriate license agreement.
 #
 CMAKE_MINIMUM_REQUIRED(VERSION 3.18)
-PROJECT(SharemindDataStoreApi VERSION "0.1.1" LANGUAGES "CXX")
+PROJECT(SharemindDataStoreApi VERSION "0.1.2" LANGUAGES "CXX")
 
 INCLUDE("${CMAKE_CURRENT_SOURCE_DIR}/config.local" OPTIONAL)
 INCLUDE("${CMAKE_CURRENT_BINARY_DIR}/config.local" OPTIONAL)
 
-FIND_PACKAGE(SharemindCMakeHelpers 1.6 REQUIRED)
+FIND_PACKAGE(SharemindCMakeHelpers 1.8 REQUIRED)
 
 
 # Data Store API headers:
